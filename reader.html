@@ -1,0 +1,65 @@
+<!-- reader.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Reader - Beluga Manga</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reader.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="reader-container" id="reader-container">
+        <!-- Top Controls -->
+        <div class="reader-controls top-controls">
+            <div class="manga-info">
+                <h1 id="manga-title">Manga Title</h1>
+                <h2 id="chapter-title">Chapter 1: Chapter Title</h2>
+            </div>
+            <div class="reader-actions">
+                <a href="#" id="back-to-manga" class="reader-btn">
+                    <i class="fas fa-times"></i>
+                </a>
+                <button class="reader-btn" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Reader Content -->
+        <div id="reader-content" class="reader-content vertical-mode">
+            <!-- Pages will be loaded here -->
+        </div>
+        
+        <!-- Bottom Controls -->
+        <div class="reader-controls bottom-controls">
+            <div class="chapter-navigation">
+                <a href="#" class="reader-btn" id="prev-chapter-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#" class="reader-btn" id="next-chapter-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            <div class="reader-mode-toggle">
+                <button class="reader-btn active" id="vertical-mode">
+                    <i class="fas fa-arrows-alt-v"></i>
+                </button>
+                <button class="reader-btn" id="horizontal-mode">
+                    <i class="fas fa-arrows-alt-h"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/manga-data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/reader.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

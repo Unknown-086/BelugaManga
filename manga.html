@@ -1,0 +1,160 @@
+<!-- manga.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" Beluga Manga="width=device-width, initial-scale=1.0">
+    <title>Manga Detail - Beluga Manga</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="icon" href="img/favicon.ico" sizes="32x32">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-book-open"></i>
+                        <span>Beluga Manga</span>
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="search" placeholder="Search manga...">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Genres</a></li>
+                    </ul>
+                </nav>
+                <div class="actions">
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="btn-outline">Sign In</button>
+                    <button class="btn-primary">Sign Up</button>
+                    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="browse.html">Browse</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Genres</a></li>
+            </ul>
+            <div class="mobile-actions">
+                <button class="btn-outline">Sign In</button>
+                <button class="btn-primary">Sign Up</button>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="manga-detail-container" id="manga-detail-container">
+                <div class="manga-detail-grid">
+                    <div class="manga-sidebar">
+                        <div class="manga-cover-container">
+                            <img id="manga-cover" src="img/placeholder.jpg" alt="Manga Cover">
+                        </div>
+                        <div class="manga-actions">
+                            <a id="read-first-chapter" href="#" class="btn-primary btn-block">
+                                <i class="fas fa-book-open"></i> Read First Chapter
+                            </a>
+                            <button class="btn-outline btn-block">
+                                <i class="fas fa-heart"></i> Add to Favorites
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="manga-content">
+                        <h1 id="manga-title" class="manga-detail-title">Manga Title</h1>
+                        
+                        <div class="manga-genres" id="manga-genres">
+                            <!-- Genres will be added here -->
+                        </div>
+                        
+                        <div class="manga-stats-grid">
+                            <div class="manga-stat">
+                                <span class="stat-label">Status</span>
+                                <span id="manga-status" class="stat-value">Ongoing</span>
+                            </div>
+                            <div class="manga-stat">
+                                <span class="stat-label">Author</span>
+                                <span id="manga-author" class="stat-value">Author Name</span>
+                            </div>
+                            <div class="manga-stat">
+                                <span class="stat-label">Year</span>
+                                <span id="manga-year" class="stat-value">2023</span>
+                            </div>
+                        </div>
+                        
+                        <div class="manga-ratings">
+                            <div class="rating-item">
+                                <i class="fas fa-star"></i>
+                                <span id="manga-rating">4.9</span>
+                            </div>
+                            <div class="rating-item">
+                                <i class="fas fa-eye"></i>
+                                <span id="manga-views">10.2M</span>
+                            </div>
+                            <div class="rating-item">
+                                <i class="fas fa-heart"></i>
+                                <span id="manga-followers">5.3M</span>
+                            </div>
+                        </div>
+                        
+                        <div class="manga-description-container">
+                            <h2>Synopsis</h2>
+                            <p id="manga-description" class="manga-description">
+                                Loading manga description...
+                            </p>
+                        </div>
+                        
+                        <div class="manga-chapters-container">
+                            <h2>Chapters</h2>
+                            <div id="manga-chapters" class="manga-chapters">
+                                <!-- Chapters will be added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-book-open"></i>
+                    <p>&copy; <span id="current-year"></span> Beluga Manga. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/manga-data.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
